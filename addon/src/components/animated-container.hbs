@@ -1,18 +1,21 @@
-{{#if this.useElementHelper}}
-  {{!--
+{{#if (macroDependencySatisfies 'ember-element-helper' '^0.6.1')}}
+  {{!
     The @class is only there to support a deprecated usage.
-  --}}
+  }}
   {{#let (element this.tag) as |Tag|~}}
-    <Tag class="animated-container {{@class}}" ...attributes>
+    <Tag class='animated-container {{@class}}' ...attributes>
       {{yield}}
     </Tag>
   {{/let}}
 {{else}}
-  {{!--
+  {{!
     The @class is only there to support a deprecated usage.
-  --}}
-  {{#let (component (ensure-safe-component (-element this.tag)) tagName=this.tag) as |Tag|~}}
-    <Tag class="animated-container {{@class}}" ...attributes>
+  }}
+  {{#let
+    (component (ensure-safe-component (-element this.tag)) tagName=this.tag)
+    as |Tag|
+  ~}}
+    <Tag class='animated-container {{@class}}' ...attributes>
       {{yield}}
     </Tag>
   {{/let}}
