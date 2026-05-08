@@ -346,6 +346,10 @@ importers:
         version: 5.98.0
 
   test-app:
+    dependencies:
+      ember-cli-deprecation-workflow:
+        specifier: ^4.0.1
+        version: 4.0.1(@babel/core@7.26.10)
     devDependencies:
       '@babel/core':
         specifier: ^7.26.10
@@ -4735,6 +4739,9 @@ packages:
   ember-cli-deploy@2.0.0:
     resolution: {integrity: sha512-x6vtuxruExD66qo/OvNldGbxZ3NTaeRSdL63Q9clJ/+JspLXeHtKxl5dDMqRNvl8sItVrZJqq9GYMJfPsg5SWA==}
     engines: {node: 12.* || 14.* || >= 16}
+
+  ember-cli-deprecation-workflow@4.0.1:
+    resolution: {integrity: sha512-XJzUZVXyb6/nFKU7GzGRlHlcAl4KtkioBTjfuIHp1aysbRZ6XxYLSPtP090EbOxQBtYwAPsH2kPAtPS86tL2RA==}
 
   ember-cli-fastboot-testing@0.6.2:
     resolution: {integrity: sha512-RwOM0Y2fT5PtiMkG7yXWCaCLGFatwKpfPT4Xt6Hxqf2ZAEkbVQWJw/aFaKLLOAo2kfted8nKdkRvZM6Jm647Pg==}
@@ -15805,6 +15812,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  ember-cli-deprecation-workflow@4.0.1(@babel/core@7.26.10):
+    dependencies:
+      '@embroider/addon-shim': 1.10.2
+      decorator-transforms: 2.3.0(@babel/core@7.26.10)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - supports-color
+
   ember-cli-fastboot-testing@0.6.2(@ember/test-helpers@5.2.2(@babel/core@7.26.10)(@glint/template@1.5.2))(@glint/template@1.5.2)(ember-source@6.2.0(@glimmer/component@1.1.2(@babel/core@7.26.10))(@glint/template@1.5.2)(rsvp@4.8.5)(webpack@5.98.0))(webpack@5.98.0):
     dependencies:
       '@ember/test-helpers': 5.2.2(@babel/core@7.26.10)(@glint/template@1.5.2)
@@ -16463,7 +16478,7 @@ snapshots:
 
   ember-keyboard@9.0.1(@babel/core@7.26.10)(@ember/test-helpers@5.2.2(@babel/core@7.26.10)(@glint/template@1.7.7))(ember-source@5.6.0(@babel/core@7.26.10)(@glint/template@1.7.7)(rsvp@4.8.5)(webpack@5.98.0)):
     dependencies:
-      '@embroider/addon-shim': 1.10.0
+      '@embroider/addon-shim': 1.10.2
       ember-destroyable-polyfill: 2.0.3(@babel/core@7.26.10)
       ember-modifier: 4.2.0(@babel/core@7.26.10)(ember-source@5.6.0(@babel/core@7.26.10)(@glint/template@1.7.7)(rsvp@4.8.5)(webpack@5.98.0))
       ember-modifier-manager-polyfill: 1.2.0(@babel/core@7.26.10)
@@ -22041,7 +22056,7 @@ snapshots:
 
   tracked-toolbox@2.0.0(@babel/core@7.26.10)(ember-source@5.6.0(@babel/core@7.26.10)(@glint/template@1.7.7)(rsvp@4.8.5)(webpack@5.98.0)):
     dependencies:
-      '@embroider/addon-shim': 1.10.0
+      '@embroider/addon-shim': 1.10.2
       ember-cache-primitive-polyfill: 1.0.1(@babel/core@7.26.10)
     optionalDependencies:
       ember-source: 5.6.0(@babel/core@7.26.10)(@glint/template@1.7.7)(rsvp@4.8.5)(webpack@5.98.0)

@@ -120,5 +120,8 @@
   "fastbootDependencies": [
     "crypto",
     "node-fetch"
-  ]
+  ],
+  "dependencies": {
+    "ember-cli-deprecation-workflow": "^4.0.1"
+  }
 }
